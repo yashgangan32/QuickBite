@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    padding: 1rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Centering Text */
+.text-center {
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+.btn-update-order{
+    background: linear-gradient(45deg, #7bed9f, #2ed573);
+    padding: 2px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+/* Full-width and proportional tables */
+.tbl-full {
+    width: 100%;
+}
+
+.tbl-30 {
+    width: 30%;
+}
+
+/* Table Styles */
+table tr th {
+    border-bottom: 1px solid black;
+    padding: 1%;
+    text-align: left;
+    
+}
+
+table tr td {
+    padding: 1%;
+    
+}
+
+/* Button Styles with Gradient */
+.btn-primary {
+    background: linear-gradient(45deg, #1e90ff, #3742fa);
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #3742fa, #1e90ff);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: linear-gradient(45deg, #7bed9f, #2ed573);
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(45deg, #2ed573, #7bed9f);
+    transform: translateY(-2px);
+}
+
+.btn-danger {
+    background: linear-gradient(45deg, #ff6b81, #ff4757);
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(45deg, #ff4757, #ff6b81);
+    transform: translateY(-2px);
+}
+
+/* Success and Error Text */
+.success {
+    color: #2ed573;
+    font-weight: bold;
+}
+
+.error {
+    color: #ff4757;
+    font-weight: bold;
+}
+
+/* CSS for Menu */
+.menu {
+    border-bottom: 1px solid grey;
+    background: #f1f2f6;
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff6b81;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #ff4757;
+}
+
+/* CSS for main-content */
+.main-content {
+    background-color: #f1f2f6;
+    padding: 3% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.col-4 {
+    width: 23%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.col-4:hover {
+    transform: translateY(-5px);
+}
+
+/* CSS for Footer */
+
+
+/* CSS for Login */
+.login {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    width: 300px;
+    margin: 10% auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login input[type="text"], .login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login input[type="submit"] {
+    width: 100%;
+    background: linear-gradient(45deg, #1e90ff, #3742fa);
+    padding: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login input[type="submit"]:hover {
+    background: linear-gradient(45deg, #3742fa, #1e90ff);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .col-4 {
+        width: 45%;
+    }
+
+    .menu ul li {
+        display: block;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .col-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .login {
+        width: 90%;
+        margin: 20% auto;
+    }
+
+    .footer {
+        padding: 15px 0;
+    }
+}
